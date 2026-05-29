@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇪🇸🇮🇹🇫🇷 西欧四国游 2026 · 攻略手册</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'PingFang SC','Microsoft YaHei',Arial,sans-serif;background:#f5f6fa;color:#222;font-size:15px}
+a{color:#2E75B6;text-decoration:none}a:hover{text-decoration:underline}
+nav{position:sticky;top:0;z-index:100;background:#1B3A6B;padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+nav a{color:#fff;font-size:13px;padding:4px 10px;border-radius:12px;background:rgba(255,255,255,0.12);white-space:nowrap}
+nav a:hover{background:rgba(255,255,255,0.25);text-decoration:none}
+.hero{background:linear-gradient(135deg,#1B3A6B 0%,#2E75B6 50%,#C41E3A 100%);color:#fff;padding:40px 20px 30px;text-align:center}
+.hero h1{font-size:28px;margin-bottom:8px}
+.hero .flags{font-size:36px;margin-bottom:10px}
+.hero .route{font-size:14px;opacity:.85;margin-bottom:16px}
+.hero .meta{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;font-size:13px}
+.hero .meta span{background:rgba(255,255,255,0.18);padding:5px 12px;border-radius:20px}
+.container{max-width:900px;margin:0 auto;padding:16px}
+h2{font-size:20px;color:#1B3A6B;margin:28px 0 12px;padding-left:10px;border-left:4px solid #2E75B6}
+h3{font-size:16px;color:#1B3A6B;margin:16px 0 8px}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px}
+th{background:#1B3A6B;color:#fff;padding:8px 10px;text-align:left;font-weight:600}
+td{padding:7px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top}
+tr:hover td{background:#f0f5ff}
+tr:nth-child(even) td{background:#f8faff}
+tr:nth-child(even):hover td{background:#f0f5ff}
+.urgent-red{background:#fff0f0!important;border-left:3px solid #C41E3A}
+.urgent-yellow{background:#fffbe6!important;border-left:3px solid #f59e0b}
+.urgent-green{background:#f0fff4!important;border-left:3px solid #10b981}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700}
+.badge-red{background:#fee2e2;color:#b91c1c}
+.badge-yellow{background:#fef3c7;color:#92400e}
+.badge-green{background:#d1fae5;color:#065f46}
+.day-card{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.07);margin-bottom:14px;overflow:hidden}
+.day-card summary{list-style:none;cursor:pointer;padding:14px 18px;display:flex;align-items:center;gap:12px;background:#fff;border-radius:12px;user-select:none}
+.day-card summary::-webkit-details-marker{display:none}
+.day-card[open] summary{border-bottom:2px solid #e2e8f0;border-radius:12px 12px 0 0}
+.day-num{background:#1B3A6B;color:#fff;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
+.day-title{flex:1}
+.day-title strong{display:block;font-size:15px;color:#1B3A6B}
+.day-title span{font-size:12px;color:#64748b}
+.day-arrow{color:#94a3b8;font-size:18px;transition:transform .2s}
+.day-card[open] .day-arrow{transform:rotate(90deg)}
+.day-body{padding:14px 18px}
+.map-link{font-size:12px;color:#2E75B6;background:#EFF6FF;padding:4px 10px;border-radius:8px;margin:6px 0;display:inline-block}
+.tabs{display:flex;gap:8px;margin:10px 0}
+.tab-btn{padding:6px 16px;border-radius:20px;border:2px solid #e2e8f0;background:#fff;cursor:pointer;font-size:13px;font-weight:600;transition:all .15s}
+.tab-btn.sunny.active{background:#fef3c7;border-color:#f59e0b;color:#92400e}
+.tab-btn.rainy.active{background:#eff6ff;border-color:#3b82f6;color:#1d4ed8}
+.plan-panel{display:none}
+.plan-panel.show{display:block}
+.note-box{background:#fffbe6;border-left:4px solid #f59e0b;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:13px}
+.warn-box{background:#fff0f0;border-left:4px solid #ef4444;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:13px}
+.tip-box{background:#f0fff4;border-left:4px solid #10b981;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:13px}
+.city-tag{display:inline-block;padding:2px 8px;border-radius:8px;font-size:11px;margin-right:4px;font-weight:700}
+.transport-box{background:#f0f5ff;border-radius:10px;padding:12px 16px;margin:10px 0;font-size:13px}
+.transport-box .tr-title{font-weight:700;color:#1B3A6B;margin-bottom:6px;font-size:14px}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:600px){.cols2{grid-template-columns:1fr}.hero h1{font-size:22px}}
+footer{text-align:center;padding:30px;color:#94a3b8;font-size:12px;background:#1B3A6B;color:#fff;margin-top:40px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#booking">⚡ 立刻预订</a>
+  <a href="#overview">📋 总览</a>
+  <a href="#days">📅 每日攻略</a>
+  <a href="#transport">🚌 城市间交通</a>
+  <a href="#hotels">🏨 住宿</a>
+  <a href="#food">🍽️ 必吃</a>
+  <a href="#tips">⚠️ 注意事项</a>
+  <a href="#packing">🎒 行李</a>
+  <a href="#budget">💰 预算</a>
+</nav>
+
+<div class="hero">
+  <div class="flags">🇪🇸 🇮🇹 🇫🇷</div>
+  <h1>西欧四国游 · 2026攻略手册</h1>
+  <div class="route">Madrid · Roma · Milano · Paris · Barcelona · Shanghai</div>
+  <div class="meta">
+    <span>📅 6月17日 — 6月30日 · 共13晚</span>
+    <span>👥 2人同行</span>
+    <span>💰 人均约€2,200</span>
+    <span>✈️ 已购：MAD落地 + BCN回沪</span>
+  </div>
+</div>
+
+<div class="container">
+
+<section id="booking">
+<h2>⚡ 立刻预订清单 / Booking Priority</h2>
+<div class="warn-box">📍 出行前必须完成以下预订——尤其达芬奇最后的晚餐，每季度放票，数分钟内售罄！</div>
+<table>
+<tr><th>紧急度</th><th>景点 / Attraction</th><th>日期</th><th>预订网站</th><th>备注</th></tr>
+<tr class="urgent-red"><td><span class="badge badge-red">🔴 最紧急</span></td><td><strong>达芬奇最后的晚餐 Last Supper</strong></td><td>6月23日</td><td><a href="https://cenacolovinciano.org/en/" target="_blank">cenacolovinciano.org ↗</a></td><td>每季度放票，数小时售罄！每15分钟仅40人</td></tr>
+<tr class="urgent-red"><td><span class="badge badge-red">🔴 最紧急</span></td><td><strong>圣家堂 Sagrada Família</strong></td><td>6月28日</td><td><a href="https://sagradafamilia.org/en/tickets" target="_blank">sagradafamilia.org ↗</a></td><td>旺季提前2-4周，否则排队3h+</td></tr>
+<tr class="urgent-red"><td><span class="badge badge-red">🔴 最紧急</span></td><td><strong>梵蒂冈博物馆+西斯廷 Vatican Museums</strong></td><td>6月21日</td><td><a href="https://www.museivaticani.va" target="_blank">museivaticani.va ↗</a></td><td>旺季提前2周，€20官网 or €25含预约费</td></tr>
+<tr class="urgent-yellow"><td><span class="badge badge-yellow">🟡 尽快</span></td><td><strong>罗马竞技场 Colosseum</strong></td><td>6月20日</td><td><a href="https://www.coopculture.it/en/tickets/" target="_blank">coopculture.it ↗</a></td><td>提前30天9:00AM CET放票，€18+€2预订费</td></tr>
+<tr class="urgent-yellow"><td><span class="badge badge-yellow">🟡 尽快</span></td><td><strong>埃菲尔铁塔顶层 Eiffel Tower Summit</strong></td><td>6月25日</td><td><a href="https://ticket.toureiffel.paris/en" target="_blank">ticket.toureiffel.paris ↗</a></td><td>提前60天开售，顶层€28.30，二楼€17.10</td></tr>
+<tr class="urgent-yellow"><td><span class="badge badge-yellow">🟡 尽快</span></td><td><strong>卢浮宫 Louvre</strong></td><td>6月26日</td><td><a href="https://www.ticketlouvre.fr/louvre/b2c/en/" target="_blank">ticketlouvre.fr ↗</a></td><td>€22，必须提前网订，现场无票可买</td></tr>
+<tr class="urgent-yellow"><td><span class="badge badge-yellow">🟡 尽快</span></td><td><strong>桂尔公园 Park Güell</strong></td><td>6月29日</td><td><a href="https://parkguell.barcelona/en/plan-your-visit/tickets/" target="_blank">parkguell.barcelona ↗</a></td><td>€10，提前1-2周</td></tr>
+<tr class="urgent-green"><td><span class="badge badge-green">🟢 较早</span></td><td><strong>巴特略之家 Casa Batlló</strong></td><td>6月29日</td><td><a href="https://www.casabatllo.es/en/tickets/" target="_blank">casabatllo.es ↗</a></td><td>€35，提前1周</td></tr>
+<tr class="urgent-green"><td><span class="badge badge-green">🟢 较早</span></td><td><strong>奥赛博物馆 Musée d'Orsay</strong></td><td>6月25日</td><td><a href="https://www.musee-orsay.fr/en/visit/practical-information/visiting-conditions" target="_blank">musee-orsay.fr ↗</a></td><td>€16，建议提前预约跳过排队</td></tr>
+</table>
+
+<div class="note-box">💡 <strong>中间城市机票/火车未购：</strong> ① MAD→FCO（罗马）廉航；② Roma→Milano 意大利高铁 Frecciarossa；③ Milano→Paris 早班TGV（约7h）或廉航；④ Paris→Barcelona TGV/Ouigo（约6.5h）或廉航。详见<a href="#transport">城市间交通</a></div>
+</section>
+
+<section id="overview">
+<h2>🗺️ 行程总览 / Trip Overview</h2>
+<table>
+<tr><th>日期</th><th>城市</th><th>住宿</th><th>城市间交通</th><th>参考/天/人</th></tr>
+<tr><td>6/17 周二</td><td>🛬 抵达马德里 Madrid</td><td>马德里</td><td>—</td><td>€20</td></tr>
+<tr><td>6/18 周三</td><td>🇪🇸 马德里 Madrid</td><td>马德里</td><td>—</td><td>€60–80</td></tr>
+<tr><td>6/19 周四</td><td>马德里上午 → ✈️ 罗马</td><td>罗马</td><td>✈️ MAD→FCO ~2.5h</td><td>€50–70</td></tr>
+<tr><td>6/20 周五</td><td>🇮🇹 罗马 Roma Day 1（古罗马）</td><td>罗马</td><td>—</td><td>€65–80</td></tr>
+<tr><td>6/21 周六</td><td>🇮🇹 罗马 Roma Day 2（梵蒂冈）</td><td>罗马</td><td>—</td><td>€65–85</td></tr>
+<tr><td>6/22 周日</td><td>罗马上午 → 🚄 米兰</td><td>米兰</td><td>🚄 Frecciarossa 3h</td><td>€55–70</td></tr>
+<tr><td>6/23 周一</td><td>🇮🇹 米兰 Milano</td><td>米兰</td><td>—</td><td>€65–80</td></tr>
+<tr><td>6/24 周二</td><td>米兰上午 → 🚄/✈️ 巴黎</td><td>巴黎</td><td>🚄 TGV ~7h 或 ✈️ 1.5h</td><td>€50–65</td></tr>
+<tr><td>6/25 周三</td><td>🇫🇷 巴黎 Paris Day 1（铁塔+奥赛）</td><td>巴黎</td><td>—</td><td>€70–90</td></tr>
+<tr><td>6/26 周四</td><td>🇫🇷 巴黎 Paris Day 2（卢浮+蒙马特）</td><td>巴黎</td><td>—</td><td>€65–85</td></tr>
+<tr><td>6/27 周五</td><td>巴黎上午 → 🚄/✈️ 巴塞罗那</td><td>巴塞罗那</td><td>🚄 TGV/Ouigo ~6.5h 或 ✈️ 1.5h</td><td>€50–65</td></tr>
+<tr><td>6/28 周六</td><td>🇪🇸 巴塞罗那 BCN Day 1（高迪）</td><td>巴塞罗那</td><td>—</td><td>€70–90</td></tr>
+<tr><td>6/29 周日</td><td>🇪🇸 巴塞罗那 BCN Day 2（海滩+建筑）</td><td>巴塞罗那</td><td>—</td><td>€65–85</td></tr>
+<tr><td>6/30 周一</td><td>✈️ 巴塞罗那 → 上海浦东</td><td>飞机上</td><td>已购票</td><td>—</td></tr>
+</table>
+</section>
+
+<section id="days">
+<h2>📅 每日详细攻略 / Day-by-Day</h2>
+<p style="font-size:13px;color:#64748b;margin-bottom:12px">点击展开每天 · ☀️晴天 / 🌧️雨天两套方案 · 📍地图按钮直接导航</p>
+
+<!-- D0 -->
+<details class="day-card" id="d0" open>
+<summary>
+  <div class="day-num">D0</div>
+  <div class="day-title"><strong>6月17日 周二 · ✈️ 抵达马德里 / Arrive Madrid</strong><span>14:00落地 · 轻松入住 · 索尔广场初探</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <a class="map-link" href="https://www.google.com/maps/dir/Aeropuerto+Adolfo+Suárez+Madrid-Barajas/Puerta+del+Sol+Madrid/Mercado+de+San+Miguel+Madrid/Gran+Via+Madrid" target="_blank">🗺️ 今日路线：机场→索尔→圣米格尔→格兰大道</a>
+  <h3>🛬 机场→市区（T4落地）</h3>
+  <table>
+  <tr><th>方式</th><th>时间</th><th>费用</th></tr>
+  <tr><td>机场大巴 Exprés Aeropuerto ⭐</td><td>40min</td><td>€5</td></tr>
+  <tr><td>地铁8号线→换乘</td><td>50min</td><td>€5</td></tr>
+  <tr><td>出租车/Uber/Bolt</td><td>30min</td><td>€30–35</td></tr>
+  </table>
+  <table>
+  <tr><th>时间</th><th>活动</th><th>费用</th><th>备注</th></tr>
+  <tr><td>14:00</td><td>入住酒店，放行李休息</td><td>—</td><td>Sol/Gran Vía附近最佳</td></tr>
+  <tr><td>16:00</td><td><strong>索尔广场 Puerta del Sol</strong> <a href="https://maps.google.com/?q=Puerta+del+Sol+Madrid" target="_blank">📍</a></td><td>免费</td><td>马德里心脏，地标打卡</td></tr>
+  <tr><td>17:30</td><td><strong>马约尔广场 Plaza Mayor</strong> <a href="https://maps.google.com/?q=Plaza+Mayor+Madrid" target="_blank">📍</a></td><td>免费</td><td>步行5min，巴洛克建筑</td></tr>
+  <tr><td>19:30</td><td><strong>Mercado de San Miguel</strong> <a href="https://maps.google.com/?q=Mercado+de+San+Miguel+Madrid" target="_blank">📍</a></td><td>€15–20</td><td>各种Tapas入门，氛围好</td></tr>
+  <tr><td>21:00</td><td><strong>格兰大道 Gran Vía</strong>夜游 <a href="https://maps.google.com/?q=Gran+Via+Madrid" target="_blank">📍</a></td><td>免费</td><td>华灯初上，感受马德里夜晚</td></tr>
+  </table>
+  <div class="tip-box">💡 <strong>时差提醒：</strong>上海→马德里时差-6小时。建议第一天轻松活动，早睡倒时差，不要硬撑。</div>
+</div>
+</details>
+
+<!-- D1 -->
+<details class="day-card" id="d1">
+<summary>
+  <div class="day-num">D1</div>
+  <div class="day-title"><strong>6月18日 周三 · 🎨 马德里全天 / Madrid Full Day</strong><span>普拉多 · 丽池公园 · 索菲亚王后 · 王宫</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <div class="tabs">
+    <button class="tab-btn sunny active" onclick="switchPlan('d1','sunny',this)">☀️ 方案A 晴天</button>
+    <button class="tab-btn rainy" onclick="switchPlan('d1','rainy',this)">🌧️ 方案B 雨天/博物馆日</button>
+  </div>
+  <div id="d1-sunny" class="plan-panel show">
+    <a class="map-link" href="https://www.google.com/maps/dir/Parque+del+Retiro+Madrid/Museo+del+Prado+Madrid/Museo+Reina+Sofia+Madrid/Mercado+de+San+Miguel+Madrid/Plaza+Mayor+Madrid" target="_blank">🗺️ 今日路线：丽池→普拉多→索菲亚→圣米格尔→马约尔</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>需预约</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:00</td><td><strong>丽池公园 Retiro</strong> <a href="https://maps.google.com/?q=Parque+del+Retiro+Madrid" target="_blank">📍</a></td><td>否</td><td>免费</td><td>1.5h</td></tr>
+    <tr><td>10:30</td><td><strong>普拉多博物馆 Prado</strong> <a href="https://maps.google.com/?q=Museo+del+Prado+Madrid" target="_blank">📍</a>（18:00后免费）</td><td>建议网购</td><td>€15</td><td>2.5h</td></tr>
+    <tr><td>13:30</td><td>午餐 La Latina区 <a href="https://maps.google.com/?q=Calle+Cava+Baja+Madrid" target="_blank">📍</a></td><td>—</td><td>€15–20</td><td>1.5h</td></tr>
+    <tr><td>15:30</td><td><strong>索菲亚王后博物馆 Reina Sofía</strong> <a href="https://maps.google.com/?q=Museo+Reina+Sofia+Madrid" target="_blank">📍</a>（含格尔尼卡原作）</td><td>否</td><td>€12（周一/三-六19-21免费）</td><td>1.5–2h</td></tr>
+    <tr><td>19:00</td><td><strong>圣米格尔市场</strong> <a href="https://maps.google.com/?q=Mercado+de+San+Miguel+Madrid" target="_blank">📍</a></td><td>否</td><td>€15–20消费</td><td>1h</td></tr>
+    <tr><td>21:00</td><td>晚餐 Sobrino de Botín <a href="https://maps.google.com/?q=Sobrino+de+Botin+Madrid" target="_blank">📍</a></td><td>强烈建议订位</td><td>€30–40</td><td>—</td></tr>
+    </table>
+  </div>
+  <div id="d1-rainy" class="plan-panel">
+    <a class="map-link" href="https://www.google.com/maps/dir/Palacio+Real+Madrid/Museo+del+Prado+Madrid/Thyssen-Bornemisza+Museum+Madrid" target="_blank">🗺️ 雨天路线：王宫→普拉多→提森博物馆→购物</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:00</td><td><strong>王宫 Palacio Real</strong> <a href="https://maps.google.com/?q=Palacio+Real+Madrid" target="_blank">📍</a></td><td>€15（建议网购）</td><td>2h</td></tr>
+    <tr><td>11:00</td><td>东方广场 Plaza de Oriente <a href="https://maps.google.com/?q=Plaza+de+Oriente+Madrid" target="_blank">📍</a></td><td>免费</td><td>30min</td></tr>
+    <tr><td>12:00</td><td>午餐 Malasaña区 <a href="https://maps.google.com/?q=Malasaña+Madrid" target="_blank">📍</a></td><td>€15–20</td><td>1h</td></tr>
+    <tr><td>13:30</td><td><strong>普拉多博物馆</strong>（细看）<a href="https://maps.google.com/?q=Museo+del+Prado+Madrid" target="_blank">📍</a></td><td>€15</td><td>3h</td></tr>
+    <tr><td>17:00</td><td><strong>提森博物馆 Thyssen</strong> <a href="https://maps.google.com/?q=Thyssen-Bornemisza+Museum+Madrid" target="_blank">📍</a></td><td>€13</td><td>2h</td></tr>
+    <tr><td>20:00</td><td>Chocolatería San Ginés（吉拿棒）<a href="https://maps.google.com/?q=Chocolateria+San+Gines+Madrid" target="_blank">📍</a></td><td>€5–8</td><td>—</td></tr>
+    </table>
+  </div>
+  <div class="note-box">🍽️ <strong>马德里必吃：</strong>蒜香大虾 Gambas al Ajillo（Casa del Abuelo）· 炸鱿鱼三明治 Bocadillo de Calamares €3 · 吉拿棒+热巧克力（San Ginés 24h）</div>
+</div>
+</details>
+
+<!-- D2 -->
+<details class="day-card" id="d2">
+<summary>
+  <div class="day-num">D2</div>
+  <div class="day-title"><strong>6月19日 周四 · ✈️ 马德里→罗马 / Madrid → Rome</strong><span>上午逛王宫 · 飞罗马 · 特拉斯提弗列晚餐</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <table>
+  <tr><th>时间</th><th>活动</th><th>费用</th><th>备注</th></tr>
+  <tr><td>09:00</td><td><strong>王宫 Palacio Real</strong>（若D1未去）<a href="https://maps.google.com/?q=Palacio+Real+Madrid" target="_blank">📍</a></td><td>€15</td><td>2h，或在Gran Vía喝咖啡</td></tr>
+  <tr><td>11:30</td><td>取行李 → 打车/地铁去机场</td><td>€5–35</td><td>T4/T1/T2出发，提前2h到</td></tr>
+  </table>
+  <div class="transport-box">
+    <div class="tr-title">✈️ 马德里(MAD) → 罗马(FCO/CIA) · 约2.5h</div>
+    <table>
+    <tr><th>航空公司</th><th>飞行时长</th><th>参考价/人</th><th>推荐</th></tr>
+    <tr><td>Vueling / Iberia ⭐</td><td>2h20m</td><td>€40–90</td><td>直飞FCO（达芬奇机场，近市区）</td></tr>
+    <tr><td>Ryanair</td><td>2h25m</td><td>€25–60</td><td>多落CIA（钱皮诺机场，较远）</td></tr>
+    </table>
+    <div style="margin-top:6px;font-size:12px">⚠️ FCO到市区：Leonardo Express火车 €14，35min。CIA到市区：大巴€6，45min。建议选FCO！</div>
+  </div>
+  <table>
+  <tr><th>时间（罗马当地，与马德里同时区）</th><th>活动</th><th>费用</th><th>备注</th></tr>
+  <tr><td>16:30</td><td>入住（Termini或Centro Storico附近）</td><td>—</td><td>推荐住Prati或Trastevere附近</td></tr>
+  <tr><td>18:00</td><td><strong>特拉斯提弗列 Trastevere 漫步</strong> <a href="https://maps.google.com/?q=Trastevere+Roma" target="_blank">📍</a></td><td>免费</td><td>罗马最美古街区，鹅卵石小巷，彩灯，很有feel</td></tr>
+  <tr><td>20:30</td><td>晚餐 Trastevere区 <a href="https://maps.google.com/?q=Trastevere+Roma" target="_blank">📍</a></td><td>€20–30</td><td>推荐：Da Enzo al 29 / Tonnarello</td></tr>
+  </table>
+  <div class="tip-box">💡 <strong>罗马飞行tips：</strong> Skyscanner / Google Flights搜索，通常Vueling最便宜。Bolt在罗马可用，比正规出租车便宜很多。</div>
+</div>
+</details>
+
+<!-- D3 -->
+<details class="day-card" id="d3">
+<summary>
+  <div class="day-num">D3</div>
+  <div class="day-title"><strong>6月20日 周五 · 🏛️ 罗马Day1 · 古罗马 / Ancient Rome</strong><span>竞技场 · 罗马广场 · 许愿池 · 纳沃纳广场</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <div class="tabs">
+    <button class="tab-btn sunny active" onclick="switchPlan('d3','sunny',this)">☀️ 方案A 古迹路线</button>
+    <button class="tab-btn rainy" onclick="switchPlan('d3','rainy',this)">🌧️ 方案B 博物馆路线</button>
+  </div>
+  <div id="d3-sunny" class="plan-panel show">
+    <a class="map-link" href="https://www.google.com/maps/dir/Colosseo+Roma/Foro+Romano+Roma/Fontana+di+Trevi+Roma/Piazza+Navona+Roma/Campo+de+Fiori+Roma" target="_blank">🗺️ 今日路线：竞技场→罗马广场→许愿池→纳沃纳→坎波广场</a>
+    <div class="warn-box">🔴 <strong>竞技场必须提前30天预订！</strong> 每天9:00 AM罗马时间开放当日+30天预约窗口。现在立即去 <a href="https://www.coopculture.it/en/tickets/" target="_blank">coopculture.it</a> 查6月20日票，€18+€2预订费</div>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>需预约</th><th>价格</th><th>时长</th><th>距离</th></tr>
+    <tr><td>09:00</td><td><strong>罗马竞技场 Colosseum</strong> <a href="https://maps.google.com/?q=Colosseo+Roma" target="_blank">📍</a></td><td>🔴 必须！</td><td>€18+€2</td><td>1.5h</td><td>—</td></tr>
+    <tr><td>10:30</td><td><strong>罗马广场+帕拉蒂尼山 Foro Romano + Palatino</strong> <a href="https://maps.google.com/?q=Foro+Romano+Roma" target="_blank">📍</a>（含在竞技场票内）</td><td>含在票内</td><td>已包含</td><td>1.5–2h</td><td>竞技场旁，步行1min</td></tr>
+    <tr><td>13:00</td><td>午餐 Campo de' Fiori附近 <a href="https://maps.google.com/?q=Campo+de+Fiori+Roma" target="_blank">📍</a></td><td>—</td><td>€12–18</td><td>1h</td><td>地铁B线+步行15min</td></tr>
+    <tr><td>15:00</td><td><strong>许愿池 Fontana di Trevi</strong> <a href="https://maps.google.com/?q=Fontana+di+Trevi+Roma" target="_blank">📍</a></td><td>否（建议8点前或晚上人少）</td><td>免费（或€2限流费）</td><td>30min</td><td>步行20min</td></tr>
+    <tr><td>16:00</td><td><strong>万神殿 Pantheon</strong> <a href="https://maps.google.com/?q=Pantheon+Roma" target="_blank">📍</a></td><td>需网购时段票</td><td>€5</td><td>45min</td><td>步行8min</td></tr>
+    <tr><td>17:00</td><td><strong>纳沃纳广场 Piazza Navona</strong> <a href="https://maps.google.com/?q=Piazza+Navona+Roma" target="_blank">📍</a></td><td>否</td><td>免费</td><td>1h</td><td>步行5min</td></tr>
+    <tr><td>19:00</td><td>Aperitivo（开胃酒）</td><td>—</td><td>€8–12</td><td>1h</td><td>—</td></tr>
+    <tr><td>21:00</td><td>晚餐 Trastevere <a href="https://maps.google.com/?q=Trastevere+Roma" target="_blank">📍</a></td><td>—</td><td>€20–30</td><td>—</td><td>地铁/步行20min</td></tr>
+    </table>
+  </div>
+  <div id="d3-rainy" class="plan-panel">
+    <a class="map-link" href="https://www.google.com/maps/dir/Museo+Nazionale+Romano+Roma/Pantheon+Roma/Piazza+Navona+Roma" target="_blank">🗺️ 雨天路线：国家罗马博物馆→万神殿→纳沃纳广场</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:30</td><td><strong>国家罗马博物馆（马西莫宫）</strong> <a href="https://maps.google.com/?q=Museo+Nazionale+Romano+Palazzo+Massimo+Roma" target="_blank">📍</a></td><td>€12</td><td>2h</td></tr>
+    <tr><td>12:00</td><td>竞技场（雨天也值得，有遮挡）<a href="https://maps.google.com/?q=Colosseo+Roma" target="_blank">📍</a></td><td>€18+€2</td><td>1.5h</td></tr>
+    <tr><td>14:30</td><td>午餐休息</td><td>€12–18</td><td>1.5h</td></tr>
+    <tr><td>16:00</td><td><strong>万神殿（完全室内）</strong> <a href="https://maps.google.com/?q=Pantheon+Roma" target="_blank">📍</a></td><td>€5</td><td>1h</td></tr>
+    <tr><td>17:30</td><td>Piazza Navona咖啡馆避雨 <a href="https://maps.google.com/?q=Piazza+Navona+Roma" target="_blank">📍</a></td><td>€4–6</td><td>1.5h</td></tr>
+    <tr><td>20:30</td><td>晚餐（附近任一餐厅）</td><td>€20–30</td><td>—</td></tr>
+    </table>
+    <div class="tip-box">☂️ 雨天Tips：罗马街头很多遮雨的拱廊。万神殿和梵蒂冈博物馆都是绝佳雨天去处。</div>
+  </div>
+  <div class="note-box">🍝 <strong>罗马必吃：</strong>卡邦尼意面 Carbonara · 阿玛特里切意面 Amatriciana · 罗马炸朝鲜蓟 Carciofi · 冰淇淋 Gelato（推荐：Giolitti / Fatamorgana）</div>
+</div>
+</details>
+
+<!-- D4 -->
+<details class="day-card" id="d4">
+<summary>
+  <div class="day-num">D4</div>
+  <div class="day-title"><strong>6月21日 周六 · ⛪ 罗马Day2 · 梵蒂冈 / Vatican Day</strong><span>梵蒂冈博物馆 · 西斯廷礼拜堂 · 圣彼得大教堂 · 圣天使堡</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <div class="tabs">
+    <button class="tab-btn sunny active" onclick="switchPlan('d4','sunny',this)">☀️ 方案A 梵蒂冈全程</button>
+    <button class="tab-btn rainy" onclick="switchPlan('d4','rainy',this)">🌧️ 方案B 博物馆深度</button>
+  </div>
+  <div id="d4-sunny" class="plan-panel show">
+    <a class="map-link" href="https://www.google.com/maps/dir/Musei+Vaticani+Roma/Basilica+di+San+Pietro+Roma/Castel+Sant%27Angelo+Roma/Piazza+del+Popolo+Roma" target="_blank">🗺️ 今日路线：梵蒂冈博物馆→圣彼得→圣天使堡→波波洛广场</a>
+    <div class="warn-box">🔴 <strong>梵蒂冈博物馆+西斯廷必须提前2周网订！</strong> 旺季6月周六极抢手。官网：<a href="https://www.museivaticani.va" target="_blank">museivaticani.va</a>，€20/人，选8:30-9:00入场</div>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>需预约</th><th>价格</th><th>时长</th></tr>
+    <tr><td>08:30</td><td><strong>梵蒂冈博物馆+西斯廷礼拜堂 Vatican Museums + Sistine Chapel</strong> <a href="https://maps.google.com/?q=Musei+Vaticani+Roma" target="_blank">📍</a></td><td>🔴 必须！museivaticani.va</td><td>€20–25</td><td>3h</td></tr>
+    <tr><td>11:30</td><td><strong>圣彼得大教堂 St. Peter's Basilica</strong> <a href="https://maps.google.com/?q=Basilica+di+San+Pietro+Roma" target="_blank">📍</a>（免费！）+穹顶 €8</td><td>否（会排队）</td><td>教堂免费/穹顶€8</td><td>1.5h</td></tr>
+    <tr><td>13:30</td><td>午餐 Prati区（梵蒂冈旁）<a href="https://maps.google.com/?q=Prati+Roma" target="_blank">📍</a></td><td>—</td><td>€15–20</td><td>1h</td></tr>
+    <tr><td>15:00</td><td><strong>圣天使堡 Castel Sant'Angelo</strong> <a href="https://maps.google.com/?q=Castel+Sant%27Angelo+Roma" target="_blank">📍</a></td><td>建议网购</td><td>€16</td><td>1.5h</td></tr>
+    <tr><td>17:00</td><td>台伯河河岸漫步 <a href="https://maps.google.com/?q=Lungotevere+Roma" target="_blank">📍</a></td><td>否</td><td>免费</td><td>1h</td></tr>
+    <tr><td>18:30</td><td><strong>波波洛广场日落 Piazza del Popolo</strong> <a href="https://maps.google.com/?q=Piazza+del+Popolo+Roma" target="_blank">📍</a></td><td>否</td><td>免费</td><td>1h</td></tr>
+    <tr><td>21:00</td><td>晚餐 Prati或Trastevere</td><td>—</td><td>€20–30</td><td>—</td></tr>
+    </table>
+  </div>
+  <div id="d4-rainy" class="plan-panel">
+    <table>
+    <tr><th>时间</th><th>景点</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:00</td><td>梵蒂冈博物馆（同上，全室内最佳雨天去处）</td><td>€20–25</td><td>4h细看</td></tr>
+    <tr><td>13:30</td><td>圣彼得大教堂（室内）</td><td>免费</td><td>1h</td></tr>
+    <tr><td>15:00</td><td>博格赛美术馆 Borghese Gallery <a href="https://maps.google.com/?q=Galleria+Borghese+Roma" target="_blank">📍</a>（需提前预约，<a href="https://galleriaborghese.beniculturali.it" target="_blank">官网</a>，€15）</td><td>€15（需提前）</td><td>2h</td></tr>
+    <tr><td>17:30</td><td>博格赛公园（下雨也美）<a href="https://maps.google.com/?q=Villa+Borghese+Roma" target="_blank">📍</a></td><td>免费</td><td>1h</td></tr>
+    <tr><td>21:00</td><td>晚餐</td><td>€20–30</td><td>—</td></tr>
+    </table>
+    <div class="tip-box">💡 <strong>博格赛美术馆tips：</strong>每场仅360人，每2小时一场，是罗马最难订的票之一。贝尼尼雕塑真迹，不可错过！提前去 <a href="https://galleriaborghese.beniculturali.it" target="_blank">galleriaborghese.beniculturali.it</a> 订票。</div>
+  </div>
+  <div class="note-box">🍕 <strong>罗马Pizza推荐：</strong>罗马式薄脆Pizza（区别于那不勒斯）· Pizzarium（切块卖，Prati区）· Da Remo（经典罗马Pizza，Testaccio）</div>
+</div>
+</details>
+
+<!-- D5 -->
+<details class="day-card" id="d5">
+<summary>
+  <div class="day-num">D5</div>
+  <div class="day-title"><strong>6月22日 周日 · 🚄 罗马→米兰 / Roma → Milano</strong><span>上午特拉斯提弗列 · 高铁3h · 米兰开胃酒</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <a class="map-link" href="https://www.google.com/maps/dir/Trastevere+Roma/Roma+Termini/Piazza+del+Duomo+Milano/Galleria+Vittorio+Emanuele+II+Milano" target="_blank">🗺️ 今日路线：特拉斯提弗列→Termini站→米兰→大教堂→Navigli</a>
+  <table>
+  <tr><th>时间</th><th>活动</th><th>费用</th><th>备注</th></tr>
+  <tr><td>08:30</td><td>Trastevere早餐咖啡 <a href="https://maps.google.com/?q=Trastevere+Roma" target="_blank">📍</a></td><td>€3–5</td><td>意式早餐：Cornetto+Cappuccino</td></tr>
+  <tr><td>09:30</td><td>取行李→打车去Termini火车站</td><td>€15–20</td><td>或地铁A线</td></tr>
+  </table>
+  <div class="transport-box">
+    <div class="tr-title">🚄 罗马(Roma Termini) → 米兰(Milano Centrale) · Frecciarossa高铁</div>
+    <table>
+    <tr><th>车次</th><th>时长</th><th>价格</th><th>预订</th></tr>
+    <tr><td>Frecciarossa（高铁）⭐</td><td>2h50m–3h30m</td><td>€30–80</td><td><a href="https://www.trenitalia.com" target="_blank">trenitalia.com</a> 或 <a href="https://www.italotreno.it" target="_blank">italotreno.it</a></td></tr>
+    <tr><td>Italo（私营高铁）</td><td>3h</td><td>€25–70</td><td><a href="https://www.italotreno.it" target="_blank">italotreno.it</a></td></tr>
+    </table>
+    <div style="margin-top:6px;font-size:12px">💡 建议选10:00–11:00出发，13:00–14:00抵达米兰，下午还有时间。提前1-2周订早鸟价更便宜。</div>
+  </div>
+  <table>
+  <tr><th>时间</th><th>活动</th><th>费用</th><th>备注</th></tr>
+  <tr><td>13:30</td><td>入住米兰（Centrale或Duomo附近）</td><td>—</td><td>推荐住Brera或Porta Nuova附近</td></tr>
+  <tr><td>14:30</td><td><strong>米兰大教堂 Duomo di Milano</strong> <a href="https://maps.google.com/?q=Duomo+di+Milano" target="_blank">📍</a>（外观免费）</td><td>外观免费/内部€3.50/屋顶€9–14</td><td>2h，哥特式建筑，3400尊雕像</td></tr>
+  <tr><td>16:30</td><td><strong>埃马努埃莱二世拱廊 Galleria Vittorio Emanuele II</strong> <a href="https://maps.google.com/?q=Galleria+Vittorio+Emanuele+II+Milano" target="_blank">📍</a></td><td>免费</td><td>1h，奢侈品购物天堂，地板马赛克，踩公牛蛋带来好运😄</td></tr>
+  <tr><td>18:00</td><td>Brera区漫步 <a href="https://maps.google.com/?q=Brera+Milano" target="_blank">📍</a></td><td>免费</td><td>1.5h，最有艺术气息的街区</td></tr>
+  <tr><td>20:00</td><td><strong>Aperitivo！</strong>（米兰首创）<a href="https://maps.google.com/?q=Navigli+Milano" target="_blank">📍</a></td><td>€8–12/杯（含小吃）</td><td>Navigli运河区最热闹，7-9pm人山人海</td></tr>
+  <tr><td>21:30</td><td>晚餐 Navigli区</td><td>€20–30</td><td>—</td></tr>
+  </table>
+  <div class="tip-box">💡 <strong>米兰Aperitivo文化：</strong>傍晚7-9点进任意酒吧，点一杯酒（€8-12）即可享用自助小吃台（意面、薯片、奶酪、切片肉等），吃得好省晚饭钱！Navigli和Brera区最佳。</div>
+</div>
+</details>
+
+<!-- D6 -->
+<details class="day-card" id="d6">
+<summary>
+  <div class="day-num">D6</div>
+  <div class="day-title"><strong>6月23日 周一 · 🎨 米兰全天 / Milano Full Day</strong><span>最后的晚餐 · 斯福尔扎城堡 · 布雷拉美术馆 · Navigli运河</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <div class="tabs">
+    <button class="tab-btn sunny active" onclick="switchPlan('d6','sunny',this)">☀️ 方案A 艺术+运河</button>
+    <button class="tab-btn rainy" onclick="switchPlan('d6','rainy',this)">🌧️ 方案B 博物馆+购物</button>
+  </div>
+  <div id="d6-sunny" class="plan-panel show">
+    <a class="map-link" href="https://www.google.com/maps/dir/Santa+Maria+delle+Grazie+Milano/Castello+Sforzesco+Milano/Pinacoteca+di+Brera+Milano/Navigli+Milano" target="_blank">🗺️ 今日路线：最后的晚餐→城堡→布雷拉→Navigli</a>
+    <div class="warn-box">🔴 <strong>达芬奇最后的晚餐是此行预订难度最高的！</strong>每15分钟仅40人，季度放票秒光。必须去：<a href="https://cenacolovinciano.org/en/" target="_blank">cenacolovinciano.org</a>。若已售罄，试 GetYourGuide（€45–80有第三方名额）。</div>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>需预约</th><th>价格</th><th>时长</th><th>备注</th></tr>
+    <tr><td>09:00</td><td><strong>最后的晚餐 Last Supper（圣玛利亚感恩教堂）</strong> <a href="https://maps.google.com/?q=Santa+Maria+delle+Grazie+Milano" target="_blank">📍</a></td><td>🔴 必须数月前！</td><td>€15（+€2预订费）</td><td>45min（严格限时）</td><td>参观完教堂免费逛</td></tr>
+    <tr><td>10:30</td><td><strong>斯福尔扎城堡 Castello Sforzesco</strong> <a href="https://maps.google.com/?q=Castello+Sforzesco+Milano" target="_blank">📍</a>（庭院免费，博物馆€5）</td><td>否</td><td>免费/€5</td><td>2h</td><td>步行15min</td></tr>
+    <tr><td>12:30</td><td>午餐 Brera区 <a href="https://maps.google.com/?q=Brera+Milano" target="_blank">📍</a></td><td>—</td><td>€15–20</td><td>1.5h</td><td>步行10min</td></tr>
+    <tr><td>14:30</td><td><strong>布雷拉美术馆 Pinacoteca di Brera</strong> <a href="https://maps.google.com/?q=Pinacoteca+di+Brera+Milano" target="_blank">📍</a></td><td>建议网购</td><td>€15</td><td>2h</td><td>意大利最重要美术馆之一，拉斐尔、卡拉瓦乔</td></tr>
+    <tr><td>17:00</td><td>Brera街区漫步+小店 <a href="https://maps.google.com/?q=Via+Brera+Milano" target="_blank">📍</a></td><td>否</td><td>免费</td><td>1.5h</td><td>画廊、书店、精品小店</td></tr>
+    <tr><td>19:30</td><td><strong>Navigli运河Aperitivo</strong> <a href="https://maps.google.com/?q=Navigli+Milano" target="_blank">📍</a></td><td>否</td><td>€8–12</td><td>2h</td><td>周一也热闹！</td></tr>
+    <tr><td>21:30</td><td>晚餐 Navigli</td><td>—</td><td>€20–30</td><td>—</td><td>推荐：Ristorante Pavé / Trattoria Madonnina</td></tr>
+    </table>
+  </div>
+  <div id="d6-rainy" class="plan-panel">
+    <a class="map-link" href="https://www.google.com/maps/dir/Santa+Maria+delle+Grazie+Milano/Duomo+di+Milano/Via+Monte+Napoleone+Milano" target="_blank">🗺️ 雨天路线：最后的晚餐→大教堂室内→时装购物</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:00</td><td>最后的晚餐（同上，必去）</td><td>€15</td><td>45min</td></tr>
+    <tr><td>10:30</td><td>大教堂室内+博物馆 Museo del Novecento <a href="https://maps.google.com/?q=Museo+del+Novecento+Milano" target="_blank">📍</a></td><td>€10</td><td>2h</td></tr>
+    <tr><td>13:00</td><td>午餐 Navigli区</td><td>€15–20</td><td>1h</td></tr>
+    <tr><td>14:30</td><td>时尚购物：四边形时装区 Quadrilatero della Moda <a href="https://maps.google.com/?q=Via+Monte+Napoleone+Milano" target="_blank">📍</a></td><td>免费逛</td><td>2h</td></tr>
+    <tr><td>17:00</td><td>布雷拉美术馆</td><td>€15</td><td>2h</td></tr>
+    <tr><td>20:00</td><td>Aperitivo+晚餐</td><td>€25–35</td><td>—</td></tr>
+    </table>
+    <div class="tip-box">👜 <strong>米兰购物tips：</strong>Via Monte Napoleone = Chanel/LV/Gucci/Prada正价。Corso Buenos Aires = 中价位品牌。Navigli = 古着+独立设计师。别买仿货！</div>
+  </div>
+  <div class="note-box">🍴 <strong>米兰必吃：</strong>米兰炸猪排 Cotoletta alla Milanese（2-3cm厚！）· 藏红花烩饭 Risotto alla Milanese · 橄榄油醋浸小牛肉 Vitello Tonnato · Panettone（米兰甜面包）</div>
+</div>
+</details>
+
+<!-- D7 -->
+<details class="day-card" id="d7">
+<summary>
+  <div class="day-num">D7</div>
+  <div class="day-title"><strong>6月24日 周二 · 🚄 米兰→巴黎 / Milano → Paris</strong><span>早班TGV或廉航 · 抵达巴黎 · 香榭丽舍初探</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <div class="transport-box">
+    <div class="tr-title">🚄/✈️ 米兰 → 巴黎 · 两种方案</div>
+    <table>
+    <tr><th>方式</th><th>时长</th><th>价格/人</th><th>优缺点</th><th>预订</th></tr>
+    <tr><td>🚄 TGV Lyria（高铁）⭐ 推荐体验</td><td>约7h（早7:00→下午14:00）</td><td>€60–120</td><td>✅ 沿途欣赏阿尔卑斯山！缺点：全天行程</td><td><a href="https://www.sncf-connect.com" target="_blank">sncf-connect.com</a></td></tr>
+    <tr><td>✈️ 廉航（推荐省时）</td><td>1.5h</td><td>€30–80</td><td>✅ 省半天游巴黎，缺点：机场远</td><td>Vueling/easyJet/Ryanair</td></tr>
+    </table>
+    <div style="margin-top:8px;font-size:12px">⚠️ 若坐TGV：米兰中央站→巴黎里昂站（Gare de Lyon），沿途经过都灵、日内瓦方向。提前2-4周订票！<br>若飞机：MXP/LIN→CDG/ORY，注意CDG到市区需50min，ORY需40min</div>
+  </div>
+  <table>
+  <tr><th>时间</th><th>活动</th><th>费用</th><th>备注</th></tr>
+  <tr><td>早上</td><td>大教堂广场早餐（若飞机则直接去机场）</td><td>€5–8</td><td>—</td></tr>
+  <tr><td>抵达后</td><td>入住巴黎（推荐：Opéra/Marais/Montmartre附近）</td><td>—</td><td>—</td></tr>
+  <tr><td>17:00</td><td><strong>香榭丽舍 Champs-Élysées</strong> <a href="https://maps.google.com/?q=Champs-Élysées+Paris" target="_blank">📍</a></td><td>免费</td><td>1.5h，凯旋门远眺，感受巴黎气场</td></tr>
+  <tr><td>19:00</td><td><strong>凯旋门 Arc de Triomphe</strong> <a href="https://maps.google.com/?q=Arc+de+Triomphe+Paris" target="_blank">📍</a>（屋顶俯瞰）</td><td>€13</td><td>1h，日落时分登顶极美</td></tr>
+  <tr><td>21:00</td><td>晚餐 附近小馆</td><td>€20–30</td><td>推荐：L'Entrecôte（只卖牛排，无需订位，排队即可）</td></tr>
+  </table>
+  <div class="tip-box">🚇 <strong>巴黎地铁tips：</strong>买10次券carnet（纸质机器可买），或用Navigo周卡€30（若在巴黎3天以上超值）。Uber/Bolt也可用但塞车严重。</div>
+</div>
+</details>
+
+<!-- D8 -->
+<details class="day-card" id="d8">
+<summary>
+  <div class="day-num">D8</div>
+  <div class="day-title"><strong>6月25日 周三 · 🗼 巴黎Day1 · 铁塔+左岸 / Paris Day 1</strong><span>埃菲尔铁塔 · 奥赛博物馆 · 圣日耳曼 · 塞纳河</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <div class="tabs">
+    <button class="tab-btn sunny active" onclick="switchPlan('d8','sunny',this)">☀️ 方案A 铁塔+左岸经典</button>
+    <button class="tab-btn rainy" onclick="switchPlan('d8','rainy',this)">🌧️ 方案B 博物馆深度游</button>
+  </div>
+  <div id="d8-sunny" class="plan-panel show">
+    <a class="map-link" href="https://www.google.com/maps/dir/Tour+Eiffel+Paris/Musée+d'Orsay+Paris/Saint-Germain-des-Prés+Paris/Notre-Dame+de+Paris" target="_blank">🗺️ 今日路线：埃菲尔铁塔→奥赛→圣日耳曼→圣母院</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>需预约</th><th>价格</th><th>时长</th><th>距离</th></tr>
+    <tr><td>09:00</td><td><strong>埃菲尔铁塔 Eiffel Tower</strong> <a href="https://maps.google.com/?q=Tour+Eiffel+Paris" target="_blank">📍</a>（顶层电梯）</td><td>🟡 必须！ticket.toureiffel.paris</td><td>顶层€28.30/2楼€17.10</td><td>2h</td><td>—</td></tr>
+    <tr><td>11:30</td><td>战神广场 Champ de Mars草坪 <a href="https://maps.google.com/?q=Champ+de+Mars+Paris" target="_blank">📍</a></td><td>否</td><td>免费</td><td>30min</td><td>铁塔旁</td></tr>
+    <tr><td>12:30</td><td>午餐 Rue Cler市场街 <a href="https://maps.google.com/?q=Rue+Cler+Paris" target="_blank">📍</a></td><td>—</td><td>€15–25</td><td>1h</td><td>步行10min</td></tr>
+    <tr><td>14:00</td><td><strong>奥赛博物馆 Musée d'Orsay</strong> <a href="https://maps.google.com/?q=Musée+d'Orsay+Paris" target="_blank">📍</a>（莫奈、梵高原作）</td><td>🟡 建议提前网订</td><td>€16</td><td>2.5h</td><td>步行15min</td></tr>
+    <tr><td>17:00</td><td><strong>圣日耳曼德佩 Saint-Germain-des-Prés</strong> <a href="https://maps.google.com/?q=Saint-Germain-des-Prés+Paris" target="_blank">📍</a></td><td>否</td><td>免费漫步</td><td>1.5h</td><td>步行10min</td></tr>
+    <tr><td>18:30</td><td>双叟咖啡馆 Les Deux Magots / 花神 Café de Flore <a href="https://maps.google.com/?q=Les+Deux+Magots+Paris" target="_blank">📍</a></td><td>否</td><td>€6–8/咖啡</td><td>1h</td><td>步行3min</td></tr>
+    <tr><td>20:00</td><td>塞纳河右岸散步 + 圣母院外观 <a href="https://maps.google.com/?q=Notre-Dame+de+Paris" target="_blank">📍</a>（重建中，外观可看）</td><td>否</td><td>免费</td><td>1h</td><td>步行20min</td></tr>
+    <tr><td>21:30</td><td>晚餐</td><td>—</td><td>€25–35</td><td>—</td><td>推荐：Le Comptoir du Relais（需订位）</td></tr>
+    </table>
+  </div>
+  <div id="d8-rainy" class="plan-panel">
+    <a class="map-link" href="https://www.google.com/maps/dir/Musée+du+Louvre+Paris/Sainte-Chapelle+Paris/Musée+d'Orsay+Paris" target="_blank">🗺️ 雨天路线：卢浮宫→圣礼拜堂→奥赛博物馆</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:00</td><td><strong>卢浮宫 Louvre</strong> <a href="https://maps.google.com/?q=Musée+du+Louvre+Paris" target="_blank">📍</a>（蒙娜丽莎+维纳斯雕像）</td><td>€22（需提前网订）</td><td>3–4h</td></tr>
+    <tr><td>14:00</td><td><strong>圣礼拜堂 Sainte-Chapelle</strong> <a href="https://maps.google.com/?q=Sainte-Chapelle+Paris" target="_blank">📍</a>（中世纪彩色玻璃窗，超惊艳）</td><td>€13</td><td>1h</td></tr>
+    <tr><td>15:30</td><td><strong>奥赛博物馆</strong></td><td>€16</td><td>2h</td></tr>
+    <tr><td>18:00</td><td>圣日耳曼+购物</td><td>免费</td><td>2h</td></tr>
+    <tr><td>21:00</td><td>晚餐</td><td>€25–35</td><td>—</td></tr>
+    </table>
+    <div class="tip-box">☂️ <strong>雨天Note：</strong>圣礼拜堂的1113块彩色玻璃，阴雨天光线更梦幻！卢浮宫一天逛不完，建议买票提前锁定蒙娜丽莎时段。</div>
+  </div>
+  <div class="note-box">🥐 <strong>巴黎必吃：</strong>羊角面包 Croissant（早餐必点）· 法式洋葱汤 Soupe à l'Oignon · 牛排薯条 Steak-frites · 马卡龙 Macarons（Ladurée）· 法棍 Baguette €1.5 · 薄饼 Crêpe（街边€4）</div>
+</div>
+</details>
+
+<!-- D9 -->
+<details class="day-card" id="d9">
+<summary>
+  <div class="day-num">D9</div>
+  <div class="day-title"><strong>6月26日 周四 · 🎨 巴黎Day2 · 卢浮+蒙马特 / Paris Day 2</strong><span>卢浮宫 · 玛黑区 · 蒙马特 · 圣心堂</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <div class="tabs">
+    <button class="tab-btn sunny active" onclick="switchPlan('d9','sunny',this)">☀️ 方案A 卢浮+蒙马特</button>
+    <button class="tab-btn rainy" onclick="switchPlan('d9','rainy',this)">🌧️ 方案B 凡尔赛宫日游</button>
+  </div>
+  <div id="d9-sunny" class="plan-panel show">
+    <a class="map-link" href="https://www.google.com/maps/dir/Musée+du+Louvre+Paris/Le+Marais+Paris/Sacré-Cœur+Paris/Moulin+Rouge+Paris" target="_blank">🗺️ 今日路线：卢浮→玛黑区→蒙马特→圣心堂→红磨坊</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>需预约</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:00</td><td><strong>卢浮宫 Louvre</strong> <a href="https://maps.google.com/?q=Musée+du+Louvre+Paris" target="_blank">📍</a></td><td>🟡 必须提前！ticketlouvre.fr</td><td>€22</td><td>3h（选重点：蒙娜丽莎/维纳斯/胜利女神）</td></tr>
+    <tr><td>13:00</td><td>午餐 Rue de Rivoli或Palais Royal <a href="https://maps.google.com/?q=Palais+Royal+Paris" target="_blank">📍</a></td><td>—</td><td>€15–25</td><td>1h</td></tr>
+    <tr><td>14:30</td><td><strong>玛黑区 Le Marais漫步</strong> <a href="https://maps.google.com/?q=Le+Marais+Paris" target="_blank">📍</a>（孚日广场、犹太区、小店）</td><td>否</td><td>免费</td><td>2h</td></tr>
+    <tr><td>17:00</td><td><strong>蒙马特 Montmartre + 圣心堂 Sacré-Cœur</strong> <a href="https://maps.google.com/?q=Sacré-Cœur+Paris" target="_blank">📍</a>（俯瞰巴黎全景！）</td><td>否</td><td>教堂免费</td><td>2h</td></tr>
+    <tr><td>19:30</td><td>蒙马特画家广场 <a href="https://maps.google.com/?q=Place+du+Tertre+Paris" target="_blank">📍</a></td><td>否</td><td>免费</td><td>1h</td></tr>
+    <tr><td>21:00</td><td>晚餐 + 红磨坊外观打卡 <a href="https://maps.google.com/?q=Moulin+Rouge+Paris" target="_blank">📍</a></td><td>—</td><td>€25–35</td><td>—</td></tr>
+    </table>
+  </div>
+  <div id="d9-rainy" class="plan-panel">
+    <a class="map-link" href="https://www.google.com/maps/dir/Paris+Montparnasse+Station/Château+de+Versailles" target="_blank">🗺️ 凡尔赛宫一日游路线</a>
+    <div class="note-box">⚠️ <strong>凡尔赛宫一日游：</strong>从巴黎Montparnasse站乘RER C，约35min，€3.50单程。建议8:30到达避人潮。<a href="https://www.chateauversailles.fr" target="_blank">chateauversailles.fr</a> 提前订票，€21.50/人（含宫殿和花园）</div>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>价格</th><th>时长</th></tr>
+    <tr><td>08:30</td><td>出发去凡尔赛（Montparnasse或Invalides站）</td><td>€3.50单程</td><td>35min</td></tr>
+    <tr><td>09:30</td><td><strong>凡尔赛宫殿</strong>（镜厅、国王寝室、王后厅）</td><td>含在€21.50内</td><td>2.5h</td></tr>
+    <tr><td>12:30</td><td>凡尔赛宫殿花园（晴天最美！）</td><td>含在内</td><td>2h</td></tr>
+    <tr><td>15:00</td><td>小特里亚农宫 Petit Trianon + 玛丽安托瓦内特农庄</td><td>含在内</td><td>1.5h</td></tr>
+    <tr><td>18:00</td><td>返回巴黎</td><td>€3.50</td><td>35min</td></tr>
+    <tr><td>20:00</td><td>晚餐（Saint-Germain）</td><td>€25–35</td><td>—</td></tr>
+    </table>
+  </div>
+</div>
+</details>
+
+<!-- D10 -->
+<details class="day-card" id="d10">
+<summary>
+  <div class="day-num">D10</div>
+  <div class="day-title"><strong>6月27日 周五 · 🚄 巴黎→巴塞罗那 / Paris → Barcelona</strong><span>上午杜乐丽花园 · TGV或廉航 · 巴塞傍晚</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <table>
+  <tr><th>时间</th><th>活动</th><th>费用</th><th>备注</th></tr>
+  <tr><td>09:00</td><td>杜乐丽花园晨跑/漫步 <a href="https://maps.google.com/?q=Jardin+des+Tuileries+Paris" target="_blank">📍</a></td><td>免费</td><td>卢浮宫到协和广场之间，巴黎告别</td></tr>
+  <tr><td>10:00</td><td>Angelina茶室早午餐（百年热巧克力）<a href="https://maps.google.com/?q=Angelina+Paris+Rivoli" target="_blank">📍</a></td><td>€15–20</td><td>排队但值得，必点热巧克力Mont-Blanc</td></tr>
+  <tr><td>11:30</td><td>取行李 → 去Gare de Lyon或机场</td><td>—</td><td>—</td></tr>
+  </table>
+  <div class="transport-box">
+    <div class="tr-title">🚄/✈️ 巴黎 → 巴塞罗那 · 两种方案</div>
+    <table>
+    <tr><th>方式</th><th>时长</th><th>价格/人</th><th>备注</th><th>预订</th></tr>
+    <tr><td>🚄 TGV/Ouigo ⭐ 推荐体验</td><td>6.5h（里昂站→Sants站）</td><td>€25–80</td><td>沿途经过地中海海岸！可选早班到下午</td><td><a href="https://www.ouigo.com" target="_blank">ouigo.com</a> / <a href="https://www.renfe.com" target="_blank">renfe.com</a></td></tr>
+    <tr><td>✈️ 廉航（省时选）</td><td>1.5–2h</td><td>€30–80</td><td>easyJet/Vueling，CDG/ORY→BCN</td><td>各平台搜索</td></tr>
+    </table>
+    <div style="margin-top:6px;font-size:12px">💡 若选Ouigo（法国版廉价高铁）：最便宜€25起，但行李有限制。Renfe-SNCF联运票含行李。里昂站→巴塞罗那Sants站直达。</div>
+  </div>
+  <table>
+  <tr><th>时间</th><th>活动</th><th>费用</th><th>备注</th></tr>
+  <tr><td>抵达后</td><td>入住巴塞罗那（Eixample或El Born推荐）</td><td>—</td><td>—</td></tr>
+  <tr><td>19:00</td><td><strong>兰布拉大道 Las Ramblas</strong> <a href="https://maps.google.com/?q=La+Rambla+Barcelona" target="_blank">📍</a></td><td>免费</td><td>⚠️ 扒手多！包包放前面</td></tr>
+  <tr><td>21:00</td><td>晚餐 El Born区 <a href="https://maps.google.com/?q=El+Born+Barcelona" target="_blank">📍</a></td><td>€20–30</td><td>巴塞最佳吃饭区域</td></tr>
+  </table>
+</div>
+</details>
+
+<!-- D11 -->
+<details class="day-card" id="d11">
+<summary>
+  <div class="day-num">D11</div>
+  <div class="day-title"><strong>6月28日 周六 · ⛪ 巴塞罗那Day1 · 高迪 / Gaudí Day</strong><span>圣家堂 · 桂尔公园 · 格拉西亚区</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <div class="tabs">
+    <button class="tab-btn sunny active" onclick="switchPlan('d11','sunny',this)">☀️ 方案A 高迪经典路线</button>
+    <button class="tab-btn rainy" onclick="switchPlan('d11','rainy',this)">🌧️ 方案B 哥特区+博物馆</button>
+  </div>
+  <div id="d11-sunny" class="plan-panel show">
+    <a class="map-link" href="https://www.google.com/maps/dir/Sagrada+Família+Barcelona/Park+Güell+Barcelona/Passeig+de+Gràcia+Barcelona" target="_blank">🗺️ 今日路线：圣家堂→桂尔公园→格拉西亚大道</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>需预约</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:00</td><td><strong>圣家堂 Sagrada Família</strong> <a href="https://maps.google.com/?q=Sagrada+Familia+Barcelona" target="_blank">📍</a></td><td>🔴 必须！sagradafamilia.org</td><td>€26（基础）/€36（含塔）</td><td>2–2.5h</td></tr>
+    <tr><td>12:00</td><td>Eixample区午餐 <a href="https://maps.google.com/?q=Eixample+Barcelona" target="_blank">📍</a></td><td>—</td><td>€15–25</td><td>1h</td></tr>
+    <tr><td>13:30</td><td><strong>桂尔公园 Park Güell</strong>（纪念区）<a href="https://maps.google.com/?q=Park+Güell+Barcelona" target="_blank">📍</a></td><td>🟡 提前预约！parkguell.barcelona</td><td>€10</td><td>2h</td></tr>
+    <tr><td>16:00</td><td>格拉西亚区漫步 <a href="https://maps.google.com/?q=Gràcia+Barcelona" target="_blank">📍</a></td><td>否</td><td>免费</td><td>1.5h</td></tr>
+    <tr><td>18:00</td><td><strong>格拉西亚大道 Passeig de Gràcia</strong>（巴特略之家+米拉之家外观）<a href="https://maps.google.com/?q=Passeig+de+Gràcia+Barcelona" target="_blank">📍</a></td><td>否（外观）</td><td>外观免费</td><td>1.5h</td></tr>
+    <tr><td>21:00</td><td>晚餐 Cervecería Catalana <a href="https://maps.google.com/?q=Cervecería+Catalana+Barcelona" target="_blank">📍</a></td><td>无法订位，排队</td><td>€25–35</td><td>—</td></tr>
+    </table>
+  </div>
+  <div id="d11-rainy" class="plan-panel">
+    <a class="map-link" href="https://www.google.com/maps/dir/Barri+Gòtic+Barcelona/Museu+Picasso+Barcelona/Sagrada+Familia+Barcelona" target="_blank">🗺️ 雨天路线：哥特区→毕加索博物馆→圣家堂</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:30</td><td><strong>哥特区 Barri Gòtic</strong>漫步 <a href="https://maps.google.com/?q=Barri+Gòtic+Barcelona" target="_blank">📍</a></td><td>免费</td><td>2h</td></tr>
+    <tr><td>12:00</td><td>巴塞罗那大教堂 <a href="https://maps.google.com/?q=Catedral+de+Barcelona" target="_blank">📍</a></td><td>免费</td><td>1h</td></tr>
+    <tr><td>14:30</td><td><strong>毕加索博物馆 Museu Picasso</strong> <a href="https://maps.google.com/?q=Museu+Picasso+Barcelona" target="_blank">📍</a></td><td>€15</td><td>2h</td></tr>
+    <tr><td>17:00</td><td>圣家堂（室内为主，雨天绝美彩光）</td><td>€26</td><td>2h</td></tr>
+    <tr><td>21:00</td><td>晚餐 El Born</td><td>€25–35</td><td>—</td></tr>
+    </table>
+  </div>
+  <div class="note-box">🍴 <strong>巴塞罗那必吃：</strong>番茄面包 Pa amb Tomàquet（每餐必点）· 海鲜饭 Paella / Fideuà（细面版更独特）· 加泰罗尼亚焦糖布蕾 Crema Catalana · 海鲜小食 Pintxos · 开胃酒 Vermut</div>
+</div>
+</details>
+
+<!-- D12 -->
+<details class="day-card" id="d12">
+<summary>
+  <div class="day-num">D12</div>
+  <div class="day-title"><strong>6月29日 周日 · 🏖️ 巴塞罗那Day2 · 建筑+海滩 / BCN Day 2</strong><span>巴特略之家 · El Born · Barceloneta海滩 · 告别大餐</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <div class="tabs">
+    <button class="tab-btn sunny active" onclick="switchPlan('d12','sunny',this)">☀️ 方案A 建筑+海滩</button>
+    <button class="tab-btn rainy" onclick="switchPlan('d12','rainy',this)">🌧️ 方案B 美术馆+购物</button>
+  </div>
+  <div id="d12-sunny" class="plan-panel show">
+    <a class="map-link" href="https://www.google.com/maps/dir/Casa+Batlló+Barcelona/El+Born+Barcelona/Barceloneta+Beach+Barcelona/Can+Solé+Barcelona" target="_blank">🗺️ 今日路线：巴特略之家→El Born→Barceloneta海滩→告别晚餐</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>需预约</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:00</td><td><strong>巴特略之家 Casa Batlló</strong> <a href="https://maps.google.com/?q=Casa+Batlló+Barcelona" target="_blank">📍</a></td><td>🟡 建议提前 casabatllo.es</td><td>€35</td><td>2h</td></tr>
+    <tr><td>11:30</td><td>米拉之家 La Pedrera外观 <a href="https://maps.google.com/?q=Casa+Milà+Barcelona" target="_blank">📍</a>（可选进入€25）</td><td>可选</td><td>外观免费/内€25</td><td>30min</td></tr>
+    <tr><td>13:00</td><td>午餐 El Born <a href="https://maps.google.com/?q=El+Born+Barcelona" target="_blank">📍</a></td><td>—</td><td>€15–25</td><td>1.5h</td></tr>
+    <tr><td>15:00</td><td><strong>El Born街区+圣玛利亚德尔马教堂</strong> <a href="https://maps.google.com/?q=Santa+Maria+del+Mar+Barcelona" target="_blank">📍</a></td><td>否</td><td>教堂免费</td><td>1.5h</td></tr>
+    <tr><td>17:00</td><td><strong>巴塞罗内塔海滩 Barceloneta 🌊</strong> <a href="https://maps.google.com/?q=Barceloneta+Beach+Barcelona" target="_blank">📍</a></td><td>否</td><td>免费</td><td>2h</td></tr>
+    <tr><td>20:30</td><td><strong>告别大餐！Can Solé / Set Portes</strong> <a href="https://maps.google.com/?q=Can+Solé+Barcelona" target="_blank">📍</a></td><td>强烈建议提前订位</td><td>€35–55</td><td>—</td></tr>
+    </table>
+  </div>
+  <div id="d12-rainy" class="plan-panel">
+    <a class="map-link" href="https://www.google.com/maps/dir/Museu+Nacional+d'Art+de+Catalunya/Casa+Batlló+Barcelona/Passeig+de+Gràcia+Barcelona" target="_blank">🗺️ 雨天路线：MNAC→巴特略之家→格拉西亚购物</a>
+    <table>
+    <tr><th>时间</th><th>景点</th><th>价格</th><th>时长</th></tr>
+    <tr><td>09:30</td><td><strong>加泰罗尼亚国家艺术博物馆 MNAC</strong> <a href="https://maps.google.com/?q=Museu+Nacional+d%27Art+de+Catalunya+Barcelona" target="_blank">📍</a>（周六15:00后免费！）</td><td>€12（或周六下午免费）</td><td>2.5h</td></tr>
+    <tr><td>13:00</td><td>午餐</td><td>€15–25</td><td>1h</td></tr>
+    <tr><td>14:30</td><td>巴特略之家</td><td>€35</td><td>2h</td></tr>
+    <tr><td>17:00</td><td>购物 Passeig de Gràcia</td><td>免费</td><td>2h</td></tr>
+    <tr><td>20:30</td><td>告别大餐</td><td>€35–55</td><td>—</td></tr>
+    </table>
+  </div>
+  <div class="warn-box">🎒 <strong>明天回家！</strong>今晚检查行李：液体≤100ml（随身）、托运行李已称重。提前网办登机手续。巴塞罗那机场T1/T2，Aerobús到Plaça Catalunya约40min，€6.75。</div>
+</div>
+</details>
+
+<!-- D13 -->
+<details class="day-card" id="d13">
+<summary>
+  <div class="day-num">D13</div>
+  <div class="day-title"><strong>6月30日 周一 · ✈️ 巴塞罗那→上海 / Barcelona → Shanghai</strong><span>机场 → 长途飞行 → 回家！</span></div>
+  <div class="day-arrow">›</div>
+</summary>
+<div class="day-body">
+  <table>
+  <tr><th>时间</th><th>活动</th><th>备注</th></tr>
+  <tr><td>出发前3h</td><td>到达BCN机场（T1或T2）</td><td>Aerobús €6.75，40min，或出租车€35–45</td></tr>
+  <tr><td>候机</td><td>机场Duty Free购物：西班牙Zara、巧克力、橄榄油、火腿罐头</td><td>⚠️ 固体食物液体分开装</td></tr>
+  <tr><td>飞行中</td><td>回顾4国13晚的美好记忆 🥹</td><td>马德里·罗马·米兰·巴黎·巴塞罗那</td></tr>
+  </table>
+  <div class="tip-box">🏠 <strong>圆满！</strong> 西欧四国：西班牙→意大利→法国→西班牙，约13晚，5座城市，无数个第一次！</div>
+</div>
+</details>
+</section>
+
+<section id="transport">
+<h2>🚌 城市间交通汇总 / Inter-city Transport</h2>
+<table>
+<tr><th>区间</th><th>推荐方式</th><th>时长</th><th>价格/人</th><th>提前量</th><th>预订网站</th></tr>
+<tr><td><strong>马德里→罗马</strong><br>MAD→FCO</td><td>✈️ Vueling/Iberia ⭐</td><td>2h20m</td><td>€40–90</td><td>提前2–4周</td><td>Skyscanner / 直接官网</td></tr>
+<tr><td><strong>罗马→米兰</strong><br>Roma Termini→Milano Centrale</td><td>🚄 Frecciarossa/Italo ⭐</td><td>2h50m–3h30m</td><td>€30–80</td><td>提前1–2周</td><td><a href="https://www.trenitalia.com" target="_blank">trenitalia.com</a> / <a href="https://www.italotreno.it" target="_blank">italotreno.it</a></td></tr>
+<tr><td><strong>米兰→巴黎</strong><br>Milano→Paris</td><td>🚄 TGV Lyria（推荐体验）<br>或 ✈️ 廉航（省时）</td><td>~7h 火车<br>1.5h 飞机</td><td>€60–120<br>€30–80</td><td>提前2–4周</td><td><a href="https://www.sncf-connect.com" target="_blank">sncf-connect.com</a> 或廉航</td></tr>
+<tr><td><strong>巴黎→巴塞罗那</strong><br>Paris Gare de Lyon→BCN Sants</td><td>🚄 TGV/Ouigo ⭐（沿海岸，风景好）<br>或 ✈️ 廉航</td><td>6.5h 火车<br>1.5h 飞机</td><td>€25–80<br>€30–80</td><td>提前2–4周</td><td><a href="https://www.ouigo.com" target="_blank">ouigo.com</a> / <a href="https://www.sncf-connect.com" target="_blank">sncf-connect.com</a></td></tr>
+</table>
+<div class="note-box">💡 <strong>总计城市间交通（4段）预算：</strong>人均约€150–350，视提前量和方式而定。火车更有旅行感，飞机更省时。</div>
+</section>
+
+<section id="hotels">
+<h2>🏨 各城市住宿推荐 / Hotel Recommendations</h2>
+<div class="cols2">
+<div>
+<h3>🇪🇸 马德里（2晚）推荐：Sol/Gran Vía区</h3>
+<table>
+<tr><th>酒店</th><th>价格/晚</th><th>特色</th></tr>
+<tr><td><strong>Room Mate Óscar</strong> <a href="https://maps.google.com/?q=Room+Mate+Oscar+Hotel+Madrid" target="_blank">📍</a></td><td>€80–110</td><td>设计感，屋顶泳池</td></tr>
+<tr><td><strong>Generator Madrid</strong> <a href="https://maps.google.com/?q=Generator+Hostel+Madrid" target="_blank">📍</a></td><td>€55–80</td><td>精品青旅私人间</td></tr>
+</table>
+</div>
+<div>
+<h3>🇮🇹 罗马（3晚）推荐：Prati/Trastevere/Termini区</h3>
+<table>
+<tr><th>酒店</th><th>价格/晚</th><th>特色</th></tr>
+<tr><td>Prati区精品酒店 <a href="https://maps.google.com/?q=Prati+Roma" target="_blank">📍</a></td><td>€80–120</td><td>梵蒂冈旁，安全安静</td></tr>
+<tr><td>Trastevere B&amp;B <a href="https://maps.google.com/?q=Trastevere+Roma" target="_blank">📍</a></td><td>€70–100</td><td>最美街区，氛围好</td></tr>
+</table>
+</div>
+<div>
+<h3>🇮🇹 米兰（2晚）推荐：Brera/Navigli区</h3>
+<table>
+<tr><th>酒店</th><th>价格/晚</th><th>特色</th></tr>
+<tr><td>Brera区精品酒店 <a href="https://maps.google.com/?q=Brera+Milano" target="_blank">📍</a></td><td>€90–130</td><td>文艺，走路去大教堂20min</td></tr>
+<tr><td>Navigli区民宿 <a href="https://maps.google.com/?q=Navigli+Milano" target="_blank">📍</a></td><td>€70–100</td><td>运河区，晚上热闹</td></tr>
+</table>
+</div>
+<div>
+<h3>🇫🇷 巴黎（3晚）推荐：Opéra/Marais区</h3>
+<table>
+<tr><th>酒店</th><th>价格/晚</th><th>特色</th></tr>
+<tr><td>Marais区精品酒店 <a href="https://maps.google.com/?q=Le+Marais+Paris" target="_blank">📍</a></td><td>€100–150</td><td>最佳地段，步行去所有景点</td></tr>
+<tr><td>Montmartre区民宿 <a href="https://maps.google.com/?q=Montmartre+Paris" target="_blank">📍</a></td><td>€80–110</td><td>浪漫，爬山上去，安静</td></tr>
+</table>
+</div>
+<div>
+<h3>🇪🇸 巴塞罗那（3晚）推荐：Eixample/El Born区</h3>
+<table>
+<tr><th>酒店</th><th>价格/晚</th><th>特色</th></tr>
+<tr><td><strong>Room Mate Pau</strong> <a href="https://maps.google.com/?q=Room+Mate+Pau+Hotel+Barcelona" target="_blank">📍</a></td><td>€85–115</td><td>时髦设计，Las Ramblas旁</td></tr>
+<tr><td>El Born区民宿 <a href="https://maps.google.com/?q=El+Born+Barcelona" target="_blank">📍</a></td><td>€70–100</td><td>最佳吃喝街区</td></tr>
+</table>
+</div>
+</div>
+</section>
+
+<section id="food">
+<h2>🍽️ 各城市必吃 / Must-eat by City</h2>
+<div class="cols2">
+<div>
+<h3>🇪🇸 马德里</h3>
+<ul style="font-size:13px;padding-left:18px;line-height:2">
+<li><strong>Sobrino de Botín</strong> — 1725年世界最古老餐厅，烤乳猪</li>
+<li>蒜香大虾 Gambas al Ajillo（Casa del Abuelo）</li>
+<li>炸鱿鱼三明治 €3（Mercado San Miguel）</li>
+<li>吉拿棒+热巧克力（San Ginés，24h）</li>
+<li>苦艾酒 Vermut（午前文化）</li>
+</ul>
+</div>
+<div>
+<h3>🇮🇹 罗马</h3>
+<ul style="font-size:13px;padding-left:18px;line-height:2">
+<li>卡邦尼意面 Carbonara（鸡蛋+培根，无奶油！）</li>
+<li>罗马炸朝鲜蓟 Carciofi alla Romana</li>
+<li>冰淇淋 Gelato（Giolitti，1900年老店）</li>
+<li>罗马式薄脆Pizza（Pizzarium，切块卖）</li>
+<li>提拉米苏 Tiramisù（意大利甜点鼻祖）</li>
+</ul>
+</div>
+<div>
+<h3>🇮🇹 米兰</h3>
+<ul style="font-size:13px;padding-left:18px;line-height:2">
+<li>米兰炸猪排 Cotoletta alla Milanese（厚切！）</li>
+<li>藏红花烩饭 Risotto alla Milanese</li>
+<li>Aperitivo开胃酒+自助小吃（Navigli）</li>
+<li>Panettone米兰甜面包</li>
+<li>浓缩咖啡 Espresso（站着喝，€1）</li>
+</ul>
+</div>
+<div>
+<h3>🇫🇷 巴黎</h3>
+<ul style="font-size:13px;padding-left:18px;line-height:2">
+<li>羊角面包 Croissant（早餐必点）</li>
+<li>法式洋葱汤 Soupe à l'Oignon</li>
+<li>牛排薯条 Steak-frites（L'Entrecôte）</li>
+<li>马卡龙 Macarons（Ladurée，两人买一盒）</li>
+<li>法棍 Baguette €1.5 + 奶酪 Fromage</li>
+<li>Angelina热巧克力（百年老店）</li>
+</ul>
+</div>
+<div>
+<h3>🇪🇸 巴塞罗那</h3>
+<ul style="font-size:13px;padding-left:18px;line-height:2">
+<li>番茄面包 Pa amb Tomàquet（每桌必点）</li>
+<li>海鲜细面 Fideuà（比海鲜饭更独特）</li>
+<li>加泰罗尼亚焦糖布蕾 Crema Catalana</li>
+<li>海鲜拼盘（Barceloneta海边）</li>
+<li>加泰气泡酒 Cava（本地版香槟，便宜）</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="tips">
+<h2>⚠️ 旅行注意事项 / Travel Tips</h2>
+<div class="cols2">
+<div>
+<div class="warn-box">🛡️ <strong>安全防盗</strong><br>
+• 巴塞罗那兰布拉大道+地铁：扒手最猖獗<br>
+• 罗马火车站(Termini)周边注意<br>
+• 巴黎地铁3、4、9号线要小心<br>
+• 包包永远放身前，手机不放后裤袋<br>
+• 贵重物品分散放，护照放酒店保险箱</div>
+<div class="warn-box">☀️ <strong>6月气候</strong><br>
+• 马德里：32°C，干热<br>
+• 罗马：30–34°C，可能很热<br>
+• 米兰：27–30°C，舒适<br>
+• 巴黎：23–26°C，最舒服<br>
+• 巴塞罗那：27–30°C，有海风<br>
+• 防晒霜SPF50+必备，帽子必备！</div>
+</div>
+<div>
+<div class="note-box">🕐 <strong>作息时间</strong><br>
+• 意大利午休14:00–16:30，很多店关门<br>
+• 西班牙午饭13:30–15:00，晚饭21:00后<br>
+• 法国餐厅一般12:00–14:00 / 19:30–22:00<br>
+• 博物馆多周一关门（注意！）<br>
+• 意大利咖啡馆站着喝比坐着便宜</div>
+<div class="tip-box">💰 <strong>省钱技巧</strong><br>
+• 普拉多/索菲亚王后博物馆：18-21点免费<br>
+• 梵蒂冈博物馆：周日最后一小时免费（但极挤）<br>
+• 巴塞MNAC：周六15:00后免费<br>
+• 法国博物馆：常有联票（卢浮+凡尔赛等）<br>
+• 超市买水0.5€，餐厅2-3€</div>
+</div>
+</div>
+<div class="note-box">📋 <strong>签证&实用</strong><br>
+• 中国公民需申根签证（主入境国：西班牙）· 建议提前6-8周申请<br>
+• 货币：全程欧元，ATM随时取款，推荐带Revolut或招行全币卡<br>
+• 插头：欧洲C/F型双圆脚，买转换头<br>
+• SIM卡：推荐买欧盟漫游eSIM（Airalo/BNESIM等），一张卡全程用<br>
+• App必装：Google Maps（下载离线图：西班牙/意大利/法国）· Bolt（打车）· Google Translate（相机翻译菜单）· Trenitalia App · SNCF Connect</div>
+</section>
+
+<section id="packing">
+<h2>🎒 行李清单 / Packing List</h2>
+<div class="cols2">
+<div>
+<h3>🔴 证件（最重要）</h3>
+<ul style="font-size:13px;padding-left:18px;line-height:2">
+<li>护照（有效期6个月以上）</li>
+<li>申根签证（西班牙为主入境国）</li>
+<li>护照+签证复印件×2（分开放）</li>
+<li>旅行保险单（打印版）</li>
+<li>所有景点预订确认邮件（截图/打印）</li>
+<li>酒店预订确认单</li>
+</ul>
+<h3>💳 金融</h3>
+<ul style="font-size:13px;padding-left:18px;line-height:2">
+<li>Visa/Mastercard信用卡×2（不同银行）</li>
+<li>欧元现金€300–400/人（备用）</li>
+<li>Revolut境外免手续费卡</li>
+</ul>
+</div>
+<div>
+<h3>👕 衣物（6月最高34°C！）</h3>
+<ul style="font-size:13px;padding-left:18px;line-height:2">
+<li>轻薄透气短袖×5–6件</li>
+<li>薄长袖×2件（进教堂需覆盖肩膀！）</li>
+<li>短裤×3条</li>
+<li>舒适步行鞋×1双（最关键！）</li>
+<li>轻薄外套×1（博物馆/地铁很冷）</li>
+<li>泳裤（巴塞海滩）</li>
+</ul>
+<h3>🧴 防晒健康</h3>
+<ul style="font-size:13px;padding-left:18px;line-height:2">
+<li>防晒霜 SPF50+（必须！南欧紫外线强）</li>
+<li>太阳镜 + 遮阳帽</li>
+<li>常用药（感冒/止痛/胃药/创可贴）</li>
+<li>C/F型插头转换头（欧洲插座）</li>
+<li>充电宝20000mAh</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="budget">
+<h2>💰 预算汇总 / Budget</h2>
+<table>
+<tr><th>项目</th><th>每人预算（13晚）</th><th>约人民币</th></tr>
+<tr><td>住宿（13晚，€90/晚÷2）</td><td>€585</td><td>¥4,680</td></tr>
+<tr><td>餐饮（€35/天×13）</td><td>€455</td><td>¥3,640</td></tr>
+<tr><td>景点门票（竞技场+梵蒂冈+最后晚餐+圣家堂+铁塔+卢浮宫+桂尔+巴特略等）</td><td>€200</td><td>¥1,600</td></tr>
+<tr><td>城市内交通（地铁/公交/打车）</td><td>€100</td><td>¥800</td></tr>
+<tr><td>城市间交通（4段廉航/高铁）</td><td>€200</td><td>¥1,600</td></tr>
+<tr><td>购物/纪念品</td><td>€200</td><td>¥1,600</td></tr>
+<tr><td>杂费/应急</td><td>€100</td><td>¥800</td></tr>
+<tr><td><strong>不含机票小计</strong></td><td><strong>≈ €1,840</strong></td><td><strong>≈ ¥14,720</strong></td></tr>
+<tr><td>中间段城市间机票/火车（4段总计）</td><td>€150–300</td><td>¥1,200–2,400</td></tr>
+<tr><td><strong>每人合计（不含已购机票）</strong></td><td><strong>≈ €2,000–2,150</strong></td><td><strong>≈ ¥16,000–17,200</strong></td></tr>
+</table>
+<div class="tip-box">✅ 两人总预算约¥32,000–35,000（不含已购MAD落地+BCN回沪机票），人均约¥16,000–17,500，在¥25,000预算内有余！🎉</div>
+</section>
+
+</div>
+
+<footer>
+  🇪🇸 马德里 · 🇮🇹 罗马 · 🇮🇹 米兰 · 🇫🇷 巴黎 · 🇪🇸 巴塞罗那 · 2026年6月<br>
+  攻略制作：2026年5月 · 价格均为参考价，出行前请再次确认 · 预祝旅途愉快！🛫
+</footer>
+
+<script>
+function switchPlan(dayId, plan, btn) {
+  const card = document.getElementById(dayId);
+  card.querySelectorAll('.plan-panel').forEach(p => p.classList.remove('show'));
+  const target = document.getElementById(dayId + '-' + plan);
+  if (target) target.classList.add('show');
+  card.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+}
+// Open first card by default
+document.getElementById('d0').open = true;
+</script>
+</body>
+</html>
